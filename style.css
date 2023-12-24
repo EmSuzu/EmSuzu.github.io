@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: var(--beige); /* Using beige as the background color */
+  background-color: var(#f5f5dc); /* Using beige as the background color */
   font-family: Arial, Helvetica, sans-serif;
 }
 
