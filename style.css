@@ -1,13 +1,21 @@
+/* Defining some earthy colors */
+:root {
+  --brown: #8b5a2b;
+  --green: #9acd32;
+  --olive: #808000;
+  --tan: #d2b48c;
+  --beige: #f5f5dc;
+}
+
 body {
-  background-image: url("image.jpg"); /* You can replace this with your image file */
-  background-size: cover;
+  background-color: var(--beige); /* Using beige as the background color */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  color: black;
+  color: var(--brown); /* Using brown as the heading color */
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
   margin-top: 100px;
 }
 
@@ -25,13 +33,40 @@ a {
   text-decoration: none;
   outline: none;
   color: white;
-  background-color: #4CAF50;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
-a:hover {background-color: #3e8e41}
+/* Using different colors for each button */
+a:nth-child(1) {
+  background-color: var(--green);
+}
+
+a:nth-child(2) {
+  background-color: var(--olive);
+}
+
+a:nth-child(3) {
+  background-color: var(--tan);
+}
+
+a:nth-child(4) {
+  background-color: var(--brown);
+}
+
+/* Changing the button color when hovered */
+a:hover {
+  filter: brightness(85%);
+}
+
+/* Changing the button color when clicked */
+a:active {
+  filter: brightness(70%);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 a:active {
   background-color: #3e8e41;
