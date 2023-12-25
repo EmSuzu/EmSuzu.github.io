@@ -1,7 +1,6 @@
 <html>
 <head>
 <style>
-/* Moving the CSS code inside the HTML file */
 :root {
   --brown: #8b5a2b;
   --green: #9acd32;
@@ -27,9 +26,10 @@ h1 {
 }
 
 a {
-  display: inline-block;
+  display: block; /* Changing this from inline-block to block */
+  width: 300px; /* Adding a fixed width for the buttons */
   padding: 15px 25px;
-  margin: 10px 20px;
+  margin: 10px auto; /* Changing this from 10px 20px to 10px auto */
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -73,10 +73,10 @@ a:active {
 <h1>Emma Bergman</h1>
 
 <div class="buttons">
-  <a href="https://www.instagram.com/emma.suzu">Instagram</a>
-  <a href="https://www.etsy.com/shop/">Etsy</a>
-  <a href="https://www.redbubble.com/">Redbubble</a>
-  <a href="https://venmo.com/">Venmo</a>
+  <a href="https://www.instagram.com/emma.bergman">Instagram</a>
+  <a href="https://www.etsy.com/shop/EmmaBergmanArt">Etsy</a>
+  <a href="https://www.redbubble.com/people/EmmaBergman/shop">Redbubble</a>
+  <a href="https://venmo.com/Emma-Bergman">Venmo</a>
 </div>
 
 </body>
